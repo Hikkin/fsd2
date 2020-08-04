@@ -1,0 +1,63 @@
+mixin textfield-email
+  input(class="textfield textfield__email" type="email" placeholder="Email")
+
+mixin textfield-mask
+  input(class="textfield textfield__mask" type="text" placeholder="ДД.ММ.ГГГГ")
+
+mixin textfield-subscription
+  .textfield__subscription
+    input(class="textfield textfield--subscription" type="email" placeholder="Email")
+    .textfield__icon
+      i(class="material-icons") arrow_forward
+
+
+mixin dropdown-guest
+  button(class="dropdown dropdown__guest" type="button")
+    span(class="dropdown__text") Сколько гостей
+    .dropdown__icon
+      i(class="material-icons") expand_more
+
+mixin dropdown-date
+  button(class="dropdown dropdown__date" type="button")
+    span(class="dropdown__text") ДД.ММ.ГГГГ
+    .dropdown__icon
+      i(class="material-icons") expand_more
+
+mixin dropdown-filterdate
+  button(class="dropdown dropdown__filterdate" type="button")
+    span(class="dropdown__text") 19 авг - 23 авг
+    .dropdown__icon
+      i(class="material-icons") expand_more
+
+mixin dropdown-prefs
+  button(class="dropdown dropdown__prefs" type="button")
+    span(class="dropdown__text") 2 спальни, 2 кровати...
+    .dropdown__icon
+      i(class="material-icons") expand_more
+
+mixin checkbox-expand
+  button(class="checkbox__expand-btn" type="button")
+    h3 expandable checkbox list
+    .dropdown__icon
+      i(class="material-icons") expand_more
+  .checkbox-exp-block
+    div
+      input(class="checkbox" type="checkbox" name="expand" id="check_breakfast" value="Завтрак")
+      label(for="check_breakfast") Завтрак
+    div  
+      input(class="checkbox" type="checkbox" name="expand" id="check_worktable" value="Письменный стол")
+      label(for="check_worktable") Письменный стол
+    div
+      input(class="checkbox" type="checkbox" name="expand" id="check_kidchair" value="Стул для кормления")
+      label(for="check_kidchair") Стул для кормления
+    div
+      input(class="checkbox" type="checkbox" name="expand" id="check_kidbed" value="Кроватка")
+      label(for="check_kidbed") Кроватка
+    div
+      input(class="checkbox" type="checkbox" name="expand" id="check_tv" value="Телевизор")
+      label(for="check_tv") Телевизор
+    div
+      input(class="checkbox" type="checkbox" name="expand" id="check_shampoo" value="Шампунь")
+      label(for="check_shampoo") Шампунь
+
+

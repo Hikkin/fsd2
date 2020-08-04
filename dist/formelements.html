@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="./images/ico.png">
+    <link rel="stylesheet" href="./fonts/fonts.css">
+    <link rel="stylesheet" href="./style.css">
+    <title>Kit | Form Elements</title>
+  </head>
+  <body>
+    <div class="fe">
+      <div class="fe__textfield">
+        <h3>text field</h3>
+            <input class="textfield textfield__email" type="email" placeholder="Email">
+      </div>
+      <div class="fe__dropdown">
+        <h3>dropdown</h3>
+            <button class="dropdown dropdown__guest" type="button"><span class="dropdown__text">Сколько гостей</span>
+              <div class="dropdown__icon"><i class="material-icons">expand_more</i></div>
+            </button>
+      </div>
+      <div class="fe__textfield">
+        <h3>masked text field</h3>
+            <input class="textfield textfield__mask" type="text" placeholder="ДД.ММ.ГГГГ">
+      </div>
+      <div class="fe__dropdown">
+        <h3>date dropdown</h3>
+            <button class="dropdown dropdown__date" type="button"><span class="dropdown__text">ДД.ММ.ГГГГ</span>
+              <div class="dropdown__icon"><i class="material-icons">expand_more</i></div>
+            </button>
+      </div>
+      <div class="fe__dropdown">
+        <h3>filter date dropdown</h3>
+            <button class="dropdown dropdown__filterdate" type="button"><span class="dropdown__text">19 авг - 23 авг</span>
+              <div class="dropdown__icon"><i class="material-icons">expand_more</i></div>
+            </button>
+      </div>
+      <div class="fe__textfield">
+        <h3>subscription text field</h3>
+            <div class="textfield__subscription">
+              <input class="textfield textfield--subscription" type="email" placeholder="Email">
+              <div class="textfield__icon"><i class="material-icons">arrow_forward</i></div>
+            </div>
+      </div>
+      <div class="fe__dropdown">
+        <h3>dropdown</h3>
+            <button class="dropdown dropdown__prefs" type="button"><span class="dropdown__text">2 спальни, 2 кровати...</span>
+              <div class="dropdown__icon"><i class="material-icons">expand_more</i></div>
+            </button>
+      </div>
+      <div class="fe__checkbox">
+            <button class="checkbox__expand-btn" type="button">
+              <h3>expandable checkbox list</h3>
+              <div class="dropdown__icon"><i class="material-icons">expand_more</i></div>
+            </button>
+            <div class="checkbox-exp-block">
+              <div>
+                <input class="checkbox" type="checkbox" name="expand" id="check_breakfast" value="Завтрак">
+                <label for="check_breakfast">Завтрак</label>
+              </div>
+              <div> 
+                <input class="checkbox" type="checkbox" name="expand" id="check_worktable" value="Письменный стол">
+                <label for="check_worktable">Письменный стол</label>
+              </div>
+              <div>
+                <input class="checkbox" type="checkbox" name="expand" id="check_kidchair" value="Стул для кормления">
+                <label for="check_kidchair">Стул для кормления</label>
+              </div>
+              <div>
+                <input class="checkbox" type="checkbox" name="expand" id="check_kidbed" value="Кроватка">
+                <label for="check_kidbed">Кроватка</label>
+              </div>
+              <div>
+                <input class="checkbox" type="checkbox" name="expand" id="check_tv" value="Телевизор">
+                <label for="check_tv">Телевизор</label>
+              </div>
+              <div>
+                <input class="checkbox" type="checkbox" name="expand" id="check_shampoo" value="Шампунь">
+                <label for="check_shampoo">Шампунь</label>
+              </div>
+            </div>
+      </div>
+    </div>
+    <script src="./script.js"></script>
+  </body>
+</html>

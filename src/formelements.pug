@@ -1,0 +1,43 @@
+doctype html
+html(lang="en")
+  head
+    meta(charset="UTF-8")
+    meta(name="viewport" content="width=device-width, initial-scale=1.0")
+    link(rel="icon" href="./images/ico.png")
+
+    link(rel="stylesheet", href="./fonts/fonts.css")
+    link(rel="stylesheet", href="./style.css")
+
+    title Kit | Form Elements
+
+    include uikit.pug
+  body
+    .fe
+      .fe__textfield
+        h3 text field
+        +textfield-email
+      .fe__dropdown
+        h3 dropdown
+        +dropdown-guest
+      .fe__textfield
+        h3 masked text field
+        +textfield-mask
+      .fe__dropdown
+        h3 date dropdown
+        +dropdown-date
+      .fe__dropdown
+        h3 filter date dropdown
+        +dropdown-filterdate
+      .fe__textfield
+        h3 subscription text field
+        +textfield-subscription
+      .fe__dropdown
+        h3 dropdown
+        +dropdown-prefs
+      .fe__checkbox
+        +checkbox-expand
+
+
+
+
+    script(src="./script.js")
