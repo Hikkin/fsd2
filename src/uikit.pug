@@ -60,4 +60,27 @@ mixin checkbox-expand
       input(class="checkbox" type="checkbox" name="expand" id="check_shampoo" value="Шампунь")
       label(for="check_shampoo") Шампунь
 
+mixin feature-comfort(space="") 
+  .feature__item
+    div(class="material-icons feature__icon") insert_emoticon
+    dl(class="feature__text")
+      dt Комфорт
+      dd Шумопоглащающие стены
+  div(class="feature__underline " + space)
+
+mixin feature-convenience(space="")
+  .feature__item
+    div(class="material-icons feature__icon") location_city
+    dl(class="feature__text")
+      dt Удобство
+      dd Окно в каждой из спален
+  div(class="feature__underline " + space) 
+
+mixin feature-cosiness(space="")
+  .feature__item
+    div(class="material-icons feature__icon") whatshot
+    dl(class="feature__text")
+      dt Уют
+      dd Номер оснащён камином
+  div(class="feature__underline " + space)
 

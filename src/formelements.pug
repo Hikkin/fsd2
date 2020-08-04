@@ -13,29 +13,33 @@ html(lang="en")
     include uikit.pug
   body
     .fe
-      .fe__textfield
+      .fe__element
         h3 text field
         +textfield-email
-      .fe__dropdown
+      .fe__element
         h3 dropdown
         +dropdown-guest
-      .fe__textfield
+      .fe__element
         h3 masked text field
         +textfield-mask
-      .fe__dropdown
+      .fe__element
         h3 date dropdown
         +dropdown-date
-      .fe__dropdown
+      .fe__element
         h3 filter date dropdown
         +dropdown-filterdate
-      .fe__textfield
+      .fe__element
         h3 subscription text field
         +textfield-subscription
-      .fe__dropdown
+      .fe__element
         h3 dropdown
         +dropdown-prefs
-      .fe__checkbox
+      .fe__element
         +checkbox-expand
+      .fe__element
+        +feature-comfort("line-show")
+        +feature-convenience("line-show")
+        +feature-cosiness
 
 
 
