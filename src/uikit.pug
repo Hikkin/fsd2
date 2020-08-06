@@ -11,6 +11,8 @@ mixin textfield-subscription
       i(class="material-icons") arrow_forward
 
 
+
+
 mixin dropdown-guest
   button(class="dropdown dropdown__guest" type="button")
     span(class="dropdown__text") Сколько гостей
@@ -35,30 +37,55 @@ mixin dropdown-prefs
     .dropdown__icon
       i(class="material-icons") expand_more
 
+
+
+
+mixin checkbox
+  .checkbox-block
+    div
+      input(class="checkbox" type="checkbox" name="default" id="check_smokeallow" value="smokeallow")
+      label(for="check_smokeallow") Можно курить
+    div
+      input(class="checkbox" type="checkbox" name="default" id="check_petsallow" value="petsallow")
+      label(for="check_petsallow") Можно с питомцами
+    div
+      input(class="checkbox" type="checkbox" name="default" id="check_guestsallow" value="guestsallow")
+      label(for="check_guestsallow") Можно пригласить гостей (до 10 человек)
+
 mixin checkbox-expand
   button(class="checkbox__expand-btn" type="button")
     h3 expandable checkbox list
     .dropdown__icon
       i(class="material-icons") expand_more
-  .checkbox-exp-block
+  .checkbox-block.exp
     div
-      input(class="checkbox" type="checkbox" name="expand" id="check_breakfast" value="Завтрак")
+      input(class="checkbox" type="checkbox" name="expand" id="check_breakfast" value="breakfast")
       label(for="check_breakfast") Завтрак
     div  
-      input(class="checkbox" type="checkbox" name="expand" id="check_worktable" value="Письменный стол")
+      input(class="checkbox" type="checkbox" name="expand" id="check_worktable" value="worktable")
       label(for="check_worktable") Письменный стол
     div
-      input(class="checkbox" type="checkbox" name="expand" id="check_kidchair" value="Стул для кормления")
+      input(class="checkbox" type="checkbox" name="expand" id="check_kidchair" value="kidchair")
       label(for="check_kidchair") Стул для кормления
     div
-      input(class="checkbox" type="checkbox" name="expand" id="check_kidbed" value="Кроватка")
+      input(class="checkbox" type="checkbox" name="expand" id="check_kidbed" value="kidbed")
       label(for="check_kidbed") Кроватка
     div
-      input(class="checkbox" type="checkbox" name="expand" id="check_tv" value="Телевизор")
+      input(class="checkbox" type="checkbox" name="expand" id="check_tv" value="tv")
       label(for="check_tv") Телевизор
     div
-      input(class="checkbox" type="checkbox" name="expand" id="check_shampoo" value="Шампунь")
+      input(class="checkbox" type="checkbox" name="expand" id="check_shampoo" value="shampoo")
       label(for="check_shampoo") Шампунь
+
+
+
+mixin radiobutton
+  a a
+
+
+
+
+
 
 mixin feature-comfort(space="") 
   .feature__item

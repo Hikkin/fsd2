@@ -1,8 +1,26 @@
 .fe {
+  display: block;
   margin: 140px 13%;
   padding: 0;
   box-sizing: border-box;
 }
+.fe__main {
+  display: flex;
+  justify-content: space-between;
+}
+.fe__other {
+  display: flex;
+  // justify-content: space-between;
+}
 .fe__element {
   display: block;
+}
+.fe__1-column {
+  display: none;
+}
+.fe__2-column {
+  display: block;
+}
+.fe__3-column {
+  display: none;
 }

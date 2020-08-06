@@ -11,37 +11,70 @@ html(lang="en")
     title Kit | Form Elements
 
     include uikit.pug
-  body
-    .fe
+  body(class="fe")
+    .fe__main
+
+      .fe__1-column
+        .fe__element
+            h3 text field
+            +textfield-email
+        .fe__element
+            h3 dropdown
+            +dropdown-guest
+        .fe__element
+            h3 masked text field
+            +textfield-mask
+        .fe__element
+            h3 date dropdown
+            +dropdown-date
+        .fe__element
+            h3 filter date dropdown
+            +dropdown-filterdate
+        .fe__element
+            h3 subscription text field
+            +textfield-subscription
+        .fe__element
+            h3 dropdown
+            +dropdown-prefs
+
+
+
+      .fe__2-column
+        .fe__element
+          h3 checkbox buttons
+          +checkbox
+        .fe__element
+          h3 radio buttons
+        .fe__element
+          h3 toggle
+        .fe__element
+          h3 like button
+        .fe__element
+          h3 rate button
+        .fe__element
+          h3 rich checkbox buttons
+        .fe__element
+          h3 bullet list
+        .fe__element
+          +checkbox-expand
+
+
+
+      .fe__3-column
+        .fe__element
+          h3 range slider
+        .fe__element
+          h3 buttons
+        .fe__element
+          h3 pagination
+
+
+    .fe__other
       .fe__element
-        h3 text field
-        +textfield-email
-      .fe__element
-        h3 dropdown
-        +dropdown-guest
-      .fe__element
-        h3 masked text field
-        +textfield-mask
-      .fe__element
-        h3 date dropdown
-        +dropdown-date
-      .fe__element
-        h3 filter date dropdown
-        +dropdown-filterdate
-      .fe__element
-        h3 subscription text field
-        +textfield-subscription
-      .fe__element
-        h3 dropdown
-        +dropdown-prefs
-      .fe__element
-        +checkbox-expand
+
       .fe__element
         +feature-comfort("line-show")
         +feature-convenience("line-show")
         +feature-cosiness
-
-
-
 
     script(src="./script.js")
