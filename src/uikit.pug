@@ -42,49 +42,133 @@ mixin dropdown-prefs
 
 mixin checkbox
   .checkbox-block
-    div
-      input(class="checkbox" type="checkbox" name="default" id="check_smokeallow" value="smokeallow")
-      label(for="check_smokeallow") Можно курить
-    div
-      input(class="checkbox" type="checkbox" name="default" id="check_petsallow" value="petsallow")
-      label(for="check_petsallow") Можно с питомцами
-    div
-      input(class="checkbox" type="checkbox" name="default" id="check_guestsallow" value="guestsallow")
-      label(for="check_guestsallow") Можно пригласить гостей (до 10 человек)
+    .checkbox-item
+      input(type="checkbox" name="default" id="check_smokeallow" value="smokeallow")
+      label(for="check_smokeallow")
+        .custom-checkbox
+        .checkbox-description Можно курить
+    .checkbox-item
+      input(type="checkbox" name="default" id="check_petsallow" value="petsallow")
+      label(for="check_petsallow")
+        .custom-checkbox
+        .checkbox-description Можно с питомцами
+    .checkbox-item.doubleline
+      input(type="checkbox" name="default" id="check_guestsallow" value="guestsallow")
+      label(for="check_guestsallow")
+        .custom-checkbox
+        .checkbox-description Можно пригласить гостей (до 10 человек)
 
 mixin checkbox-expand
-  button(class="checkbox__expand-btn" type="button")
-    h3 expandable checkbox list
-    .dropdown__icon
-      i(class="material-icons") expand_more
-  .checkbox-block.exp
-    div
-      input(class="checkbox" type="checkbox" name="expand" id="check_breakfast" value="breakfast")
-      label(for="check_breakfast") Завтрак
-    div  
-      input(class="checkbox" type="checkbox" name="expand" id="check_worktable" value="worktable")
-      label(for="check_worktable") Письменный стол
-    div
-      input(class="checkbox" type="checkbox" name="expand" id="check_kidchair" value="kidchair")
-      label(for="check_kidchair") Стул для кормления
-    div
-      input(class="checkbox" type="checkbox" name="expand" id="check_kidbed" value="kidbed")
-      label(for="check_kidbed") Кроватка
-    div
-      input(class="checkbox" type="checkbox" name="expand" id="check_tv" value="tv")
-      label(for="check_tv") Телевизор
-    div
-      input(class="checkbox" type="checkbox" name="expand" id="check_shampoo" value="shampoo")
-      label(for="check_shampoo") Шампунь
+  .checkbox-item-expand
+    input(type="checkbox" name="openexpand" id="openexpand" value="")
+    label(for="openexpand")
+      .checkbox__expand-btn
+        h3 expandable checkbox list
+        .dropdown__icon
+          i(class="material-icons") expand_more
+    .checkbox-block-exp
+      .checkbox-item
+        input(type="checkbox" name="expand" id="check_breakfast" value="breakfast")
+        label(for="check_breakfast")
+          .custom-checkbox
+          .checkbox-description Завтрак
+      .checkbox-item 
+        input(type="checkbox" name="expand" id="check_worktable" value="worktable")
+        label(for="check_worktable")
+          .custom-checkbox
+          .checkbox-description Письменный стол
+      .checkbox-item
+        input(type="checkbox" name="expand" id="check_kidchair" value="kidchair")
+        label(for="check_kidchair")
+          .custom-checkbox
+          .checkbox-description Стул для кормления
+      .checkbox-item
+        input(type="checkbox" name="expand" id="check_kidbed" value="kidbed")
+        label(for="check_kidbed")
+          .custom-checkbox
+          .checkbox-description Кроватка
+      .checkbox-item
+        input(type="checkbox" name="expand" id="check_tv" value="tv")
+        label(for="check_tv")
+          .custom-checkbox
+          .checkbox-description Телевизор
+      .checkbox-item
+        input(type="checkbox" name="expand" id="check_shampoo" value="shampoo")
+        label(for="check_shampoo")
+          .custom-checkbox
+          .checkbox-description Шампунь
+
+mixin checkbox-rich
+  .checkbox-block-rich
+    .checkbox-item-rich
+      input(type="checkbox" name="rich" id="check-rich_corridor" value="widecorridor")
+      label(for="check-rich_corridor")
+        .custom-checkbox
+        .checkbox-text
+          .checkbox-title Широкий корридор
+          .checkbox-description Ширина коридоров в номере не менее 91 см.
+    .checkbox-item-rich
+      input(type="checkbox" name="rich" id="check-rich_helper" value="invhelper")
+      label(for="check-rich_helper")
+        .custom-checkbox
+        .checkbox-text
+          .checkbox-title Помощник для инвалидов
+          .checkbox-description На 1 этаже вас встретит специалист и проводит до номера.
 
 
 
 mixin radiobutton
-  a a
+  .radio__block
+    .radio-male
+      input(type="radio" name="sex" id="radio_male" value="sex_male")
+      label(for="radio_male")
+        .custom-radio
+        .radio-text Мужчина
+      
+   
+    .radio-female
+      input(type="radio" name="sex" id="radio_female" value="sex_female")     
+      label(for="radio_female")
+        .custom-radio
+        .radio-text Женщина
+      
+mixin togglebutton
+  .toggle-item
+    input(type="checkbox" name="toggle" id="toggle_spec" value="allow_spec-email")
+    label(for="toggle_spec")
+      .custom-toggle
+      .toggle-text Получать спецпредложения
+
+mixin likebutton
+  .like-item
+    input(type="checkbox" name="like" id="like_button" value="like")
+    label(for="like_button")
+      .custom-like
+        div(class="material-icons like-icon") favorite_border
+        div(class="material-icons like-icon--active") favorite
+        .like-count 2
+
+mixin ratebutton
+    .rate-box
+      span(id="star0" class="material-icons star")
+      span(id="star1" class="material-icons star")
+      span(id="star2" class="material-icons star")
+      span(id="star3" class="material-icons star")
+      span(id="star4" class="material-icons star_border")
 
 
 
-
+mixin bulletlist
+  .bullet-block
+    .bullet-item 
+      .bullet-mark
+      .bullet-text Нельзя с питомцами
+    .bullet-item 
+      .bullet-mark
+      .bullet-text Без вечеринок и мероприятий
+    .bullet-item
+      .bullet-mark
+      .bullet-text Время прибытия — после 13:00, а выезд до 12:00
 
 
 mixin feature-comfort(space="") 

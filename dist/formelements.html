@@ -55,67 +55,169 @@
         <div class="fe__element">
           <h3>checkbox buttons</h3>
               <div class="checkbox-block">
-                <div>
-                  <input class="checkbox" type="checkbox" name="default" id="check_smokeallow" value="smokeallow">
-                  <label for="check_smokeallow">Можно курить</label>
+                <div class="checkbox-item">
+                  <input type="checkbox" name="default" id="check_smokeallow" value="smokeallow">
+                  <label for="check_smokeallow">
+                    <div class="custom-checkbox"></div>
+                    <div class="checkbox-description">Можно курить</div>
+                  </label>
                 </div>
-                <div>
-                  <input class="checkbox" type="checkbox" name="default" id="check_petsallow" value="petsallow">
-                  <label for="check_petsallow">Можно с питомцами</label>
+                <div class="checkbox-item">
+                  <input type="checkbox" name="default" id="check_petsallow" value="petsallow">
+                  <label for="check_petsallow">
+                    <div class="custom-checkbox"></div>
+                    <div class="checkbox-description">Можно с питомцами</div>
+                  </label>
                 </div>
-                <div>
-                  <input class="checkbox" type="checkbox" name="default" id="check_guestsallow" value="guestsallow">
-                  <label for="check_guestsallow">Можно пригласить гостей (до 10 человек)</label>
+                <div class="checkbox-item doubleline">
+                  <input type="checkbox" name="default" id="check_guestsallow" value="guestsallow">
+                  <label for="check_guestsallow">
+                    <div class="custom-checkbox"></div>
+                    <div class="checkbox-description">Можно пригласить гостей (до 10 человек)</div>
+                  </label>
                 </div>
               </div>
         </div>
         <div class="fe__element">
           <h3>radio buttons</h3>
+              <div class="radio__block">
+                <div class="radio-male">
+                  <input type="radio" name="sex" id="radio_male" value="sex_male">
+                  <label for="radio_male">
+                    <div class="custom-radio"></div>
+                    <div class="radio-text">Мужчина</div>
+                  </label>
+                </div>
+                <div class="radio-female">
+                  <input type="radio" name="sex" id="radio_female" value="sex_female">
+                  <label for="radio_female">
+                    <div class="custom-radio"></div>
+                    <div class="radio-text">Женщина</div>
+                  </label>
+                </div>
+              </div>
         </div>
         <div class="fe__element">
           <h3>toggle</h3>
+              <div class="toggle-item">
+                <input type="checkbox" name="toggle" id="toggle_spec" value="allow_spec-email">
+                <label for="toggle_spec">
+                  <div class="custom-toggle"></div>
+                  <div class="toggle-text">Получать спецпредложения</div>
+                </label>
+              </div>
         </div>
         <div class="fe__element">
           <h3>like button</h3>
+              <div class="like-item">
+                <input type="checkbox" name="like" id="like_button" value="like">
+                <label for="like_button">
+                  <div class="custom-like">
+                    <div class="material-icons like-icon">favorite_border</div>
+                    <div class="material-icons like-icon--active">favorite</div>
+                    <div class="like-count">2</div>
+                  </div>
+                </label>
+              </div>
         </div>
         <div class="fe__element">
           <h3>rate button</h3>
+              <div class="rate-box"><span class="material-icons star" id="star0"></span><span class="material-icons star" id="star1"></span><span class="material-icons star" id="star2"></span><span class="material-icons star" id="star3"></span><span class="material-icons star_border" id="star4"></span></div>
         </div>
         <div class="fe__element">
           <h3>rich checkbox buttons</h3>
+              <div class="checkbox-block-rich">
+                <div class="checkbox-item-rich">
+                  <input type="checkbox" name="rich" id="check-rich_corridor" value="widecorridor">
+                  <label for="check-rich_corridor">
+                    <div class="custom-checkbox"></div>
+                    <div class="checkbox-text">
+                      <div class="checkbox-title">Широкий корридор</div>
+                      <div class="checkbox-description">Ширина коридоров в номере не менее 91 см.</div>
+                    </div>
+                  </label>
+                </div>
+                <div class="checkbox-item-rich">
+                  <input type="checkbox" name="rich" id="check-rich_helper" value="invhelper">
+                  <label for="check-rich_helper">
+                    <div class="custom-checkbox"></div>
+                    <div class="checkbox-text">
+                      <div class="checkbox-title">Помощник для инвалидов</div>
+                      <div class="checkbox-description">На 1 этаже вас встретит специалист и проводит до номера.</div>
+                    </div>
+                  </label>
+                </div>
+              </div>
         </div>
         <div class="fe__element">
           <h3>bullet list</h3>
+              <div class="bullet-block">
+                <div class="bullet-item"> 
+                  <div class="bullet-mark"></div>
+                  <div class="bullet-text">Нельзя с питомцами</div>
+                </div>
+                <div class="bullet-item"> 
+                  <div class="bullet-mark"></div>
+                  <div class="bullet-text">Без вечеринок и мероприятий</div>
+                </div>
+                <div class="bullet-item">
+                  <div class="bullet-mark"></div>
+                  <div class="bullet-text">Время прибытия — после 13:00, а выезд до 12:00</div>
+                </div>
+              </div>
         </div>
         <div class="fe__element">
-              <button class="checkbox__expand-btn" type="button">
-                <h3>expandable checkbox list</h3>
-                <div class="dropdown__icon"><i class="material-icons">expand_more</i></div>
-              </button>
-              <div class="checkbox-block exp">
-                <div>
-                  <input class="checkbox" type="checkbox" name="expand" id="check_breakfast" value="breakfast">
-                  <label for="check_breakfast">Завтрак</label>
-                </div>
-                <div> 
-                  <input class="checkbox" type="checkbox" name="expand" id="check_worktable" value="worktable">
-                  <label for="check_worktable">Письменный стол</label>
-                </div>
-                <div>
-                  <input class="checkbox" type="checkbox" name="expand" id="check_kidchair" value="kidchair">
-                  <label for="check_kidchair">Стул для кормления</label>
-                </div>
-                <div>
-                  <input class="checkbox" type="checkbox" name="expand" id="check_kidbed" value="kidbed">
-                  <label for="check_kidbed">Кроватка</label>
-                </div>
-                <div>
-                  <input class="checkbox" type="checkbox" name="expand" id="check_tv" value="tv">
-                  <label for="check_tv">Телевизор</label>
-                </div>
-                <div>
-                  <input class="checkbox" type="checkbox" name="expand" id="check_shampoo" value="shampoo">
-                  <label for="check_shampoo">Шампунь</label>
+              <div class="checkbox-item-expand">
+                <input type="checkbox" name="openexpand" id="openexpand" value="">
+                <label for="openexpand">
+                  <div class="checkbox__expand-btn">
+                    <h3>expandable checkbox list</h3>
+                    <div class="dropdown__icon"><i class="material-icons">expand_more</i></div>
+                  </div>
+                </label>
+                <div class="checkbox-block-exp">
+                  <div class="checkbox-item">
+                    <input type="checkbox" name="expand" id="check_breakfast" value="breakfast">
+                    <label for="check_breakfast">
+                      <div class="custom-checkbox"></div>
+                      <div class="checkbox-description">Завтрак</div>
+                    </label>
+                  </div>
+                  <div class="checkbox-item"> 
+                    <input type="checkbox" name="expand" id="check_worktable" value="worktable">
+                    <label for="check_worktable">
+                      <div class="custom-checkbox"></div>
+                      <div class="checkbox-description">Письменный стол</div>
+                    </label>
+                  </div>
+                  <div class="checkbox-item">
+                    <input type="checkbox" name="expand" id="check_kidchair" value="kidchair">
+                    <label for="check_kidchair">
+                      <div class="custom-checkbox"></div>
+                      <div class="checkbox-description">Стул для кормления</div>
+                    </label>
+                  </div>
+                  <div class="checkbox-item">
+                    <input type="checkbox" name="expand" id="check_kidbed" value="kidbed">
+                    <label for="check_kidbed">
+                      <div class="custom-checkbox"></div>
+                      <div class="checkbox-description">Кроватка</div>
+                    </label>
+                  </div>
+                  <div class="checkbox-item">
+                    <input type="checkbox" name="expand" id="check_tv" value="tv">
+                    <label for="check_tv">
+                      <div class="custom-checkbox"></div>
+                      <div class="checkbox-description">Телевизор</div>
+                    </label>
+                  </div>
+                  <div class="checkbox-item">
+                    <input type="checkbox" name="expand" id="check_shampoo" value="shampoo">
+                    <label for="check_shampoo">
+                      <div class="custom-checkbox"></div>
+                      <div class="checkbox-description">Шампунь</div>
+                    </label>
+                  </div>
                 </div>
               </div>
         </div>

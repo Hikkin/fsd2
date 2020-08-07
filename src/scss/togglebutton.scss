@@ -1,0 +1,47 @@
+.toggle-item {
+  display: flex;
+  margin-top: 10px;
+  font-family: Open Sans;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 18px;
+
+  color: rgba(31, 32, 65, 0.5);
+
+  align-content: center;
+}
+.custom-toggle {
+  width: 40px;
+  height: 20px;
+
+  background: #FFF;
+
+  border: 1px solid rgba(31, 32, 65, 0.25);
+  box-sizing: border-box;
+  border-radius: 10px;
+  margin-right: 10px;
+}
+.custom-toggle::after{
+  content: "";
+  width: 18px;
+  height: 18px;
+  display: inline-block;
+  flex-shrink: 0;
+  flex-grow: 0;
+  background: rgba(31, 32, 65, 0.25);
+  clip-path: circle(6px at 50% 50%);
+  transition: transform .1s linear;
+}
+.toggle-text {
+  user-select: none;
+}
+
+input[type="checkbox"]:checked + label .custom-toggle {
+  border-color: #bc9cff;
+}
+input[type="checkbox"]:checked + label .custom-toggle::after {
+  transition: transform .1s linear;
+  transform: translateX(20px);
+  background: #bc9cff;
+}
