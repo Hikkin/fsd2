@@ -543,3 +543,131 @@ input[type="checkbox"]:checked + label .custom-like {
   font-size: 14px;
   line-height: 24px;
   color: rgba(31, 32, 65, 0.75); }
+.btn {
+  width: fit-content;
+  height: fit-content;
+  display: block;
+  margin: 10px 0;
+  user-select: none; }
+
+.btn button {
+  outline: none;
+  border: none;
+  font-family: Montserrat;
+  font-weight: bold;
+  font-size: 12px;
+  line-height: 15px;
+  text-transform: uppercase;
+  text-align: center;
+  border-radius: 22px;
+  cursor: pointer; }
+
+.btn__default {
+  width: 99px;
+  height: 44px;
+  background: linear-gradient(180deg, #bc9cff 0%, #8ba4f9 100%);
+  border-radius: 22px;
+  color: #fff;
+  transition: opacity .1s linear; }
+
+.btn__default:hover {
+  transition: opacity .1s linear;
+  opacity: 0.5; }
+
+.btn__border--gradient {
+  position: absolute;
+  width: 96px;
+  height: 44px;
+  background: linear-gradient(180deg, #bc9cff 0%, #8ba4f9 100%);
+  border-radius: 22px;
+  transition: opacity .1s linear;
+  margin-top: -29.5px;
+  margin-left: -8px;
+  z-index: -1; }
+
+.btn__border {
+  position: relative;
+  margin-left: 2px;
+  width: 92px;
+  height: 40px;
+  border-radius: 22px;
+  background: #fff;
+  color: #bc9cff; }
+
+.btn__border:hover .btn__border--gradient {
+  transition: opacity .1s linear;
+  opacity: 0.5; }
+
+.btn__onlytext {
+  background: transparent;
+  color: rgba(31, 32, 65, 0.5);
+  transition: color .1s linear; }
+
+.btn__onlytext:hover {
+  transition: color .1s linear;
+  color: #bc9cff; }
+
+.btn__wide {
+  position: relative;
+  width: 320px;
+  height: 44px;
+  background: linear-gradient(180deg, #bc9cff 0%, #8ba4f9 100%);
+  border-radius: 22px;
+  color: #fff;
+  transition: opacity .1s linear; }
+
+.btn__wide:hover {
+  transition: opacity .1s linear;
+  opacity: 0.5; }
+
+.btn__wide__arrow {
+  position: absolute;
+  font-family: Material Icons;
+  text-transform: none;
+  font-weight: normal;
+  font-size: 24px;
+  line-height: 24px;
+  margin-top: -20px;
+  margin-left: 280px;
+  color: #FFFFFF; }
+.slider {
+  position: relative;
+  width: 266px;
+  height: 6px;
+  margin-top: 20px;
+  background: #FFFFFF;
+  border: 1px solid rgba(31, 32, 65, 0.25);
+  box-sizing: border-box;
+  border-radius: 3px; }
+
+.slider-ball-1 {
+  position: absolute;
+  width: 12px;
+  height: 12px;
+  margin-top: -6px;
+  margin-left: 70px;
+  cursor: pointer;
+  z-index: 1;
+  background: linear-gradient(180deg, #6FCF97 0%, #66D2EA 100%);
+  border: 2px solid #FFFFFF;
+  border-radius: 10px; }
+
+.slider-betweenball {
+  position: absolute;
+  width: 100px;
+  height: 4px;
+  border-radius: 3px;
+  margin-left: 75px;
+  background: linear-gradient(180deg, #6FCF97 0%, #66D2EA 100%); }
+
+.slider-ball-2 {
+  position: absolute;
+  width: 12px;
+  height: 12px;
+  margin-top: -6px;
+  margin-left: 170px;
+  cursor: pointer;
+  z-index: 1;
+  background: linear-gradient(180deg, #6FCF97 0%, #66D2EA 100%);
+  border: 2px solid #FFFFFF;
+  border-radius: 10px; }
