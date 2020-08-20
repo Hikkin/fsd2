@@ -1,17 +1,14 @@
 
 .btn {
-  width: fit-content;
-  height: fit-content;
-  display: block;
   margin: 10px 0;
-
   user-select: none;
 }
 
 .btn button {
+  padding: 0;
   outline: none;
   border: none;
-  font-family: Montserrat;
+  font-family: Open Sans;
   font-weight: bold;
   font-size: 12px;
   line-height: 15px;
@@ -44,7 +41,7 @@
   border-radius: 22px;
   transition: opacity .1s linear;
   margin-top: -29.5px;
-  margin-left: -8px;
+  margin-left: -2px;
 
   z-index: -1;
 }

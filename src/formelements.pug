@@ -36,6 +36,8 @@ html(lang="en")
         .fe__element
             h3 dropdown
             +dropdown-prefs
+        .fe__element
+          +checkbox-expand
 
 
 
@@ -61,8 +63,7 @@ html(lang="en")
         .fe__element
           h3 bullet list
           +bulletlist
-        .fe__element
-          +checkbox-expand
+
 
 
 
@@ -78,14 +79,15 @@ html(lang="en")
           +button-wide
         .fe__element
           h3 pagination
+          +pagination
 
 
     .fe__other
       .fe__element
-
-      .fe__element
         +feature-comfort("line-show")
         +feature-convenience("line-show")
         +feature-cosiness
+      .fe__element
+        +comment
 
     script(src="./script.js")

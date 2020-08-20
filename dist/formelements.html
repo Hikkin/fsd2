@@ -17,9 +17,45 @@
         </div>
         <div class="fe__element">
           <h3>dropdown</h3>
-              <button class="dropdown dropdown__guest" type="button"><span class="dropdown__text">Сколько гостей</span>
-                <div class="dropdown__icon"><i class="material-icons">expand_more</i></div>
-              </button>
+              <div class="dropdown">
+                <input type="checkbox" name="dropdown-g" id="dropdown-g">
+                <label for="dropdown-g">
+                  <div class="dropdown__btn dropdown__guest"><span class="dropdown__text">Сколько гостей</span>
+                    <div class="dropdown__icon"><i class="material-icons">expand_more</i></div>
+                  </div>
+                </label>
+                <div class="dropdown__guest-open">
+                  <div class="dropdown-item"><span>взрослые</span>
+                    <div class="countbuttons">
+                      <div class="minus-circle">-</div>
+                      <div class="count">0</div>
+                      <div class="plus-circle">+</div>
+                    </div>
+                  </div>
+                  <div class="dropdown-item"><span>дети</span>
+                    <div class="countbuttons">
+                      <div class="minus-circle">-</div>
+                      <div class="count">0</div>
+                      <div class="plus-circle">+</div>
+                    </div>
+                  </div>
+                  <div class="dropdown-item"><span>младенцы</span>
+                    <div class="countbuttons">
+                      <div class="minus-circle">-</div>
+                      <div class="count">0</div>
+                      <div class="plus-circle">+</div>
+                    </div>
+                  </div>
+                  <div class="dropdown-item">
+                    <div class="btn">
+                      <button class="btn__onlytext">очистить</button>
+                    </div>
+                    <div class="btn">
+                      <button class="btn__onlytext">применить</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
         </div>
         <div class="fe__element">
           <h3>masked text field</h3>
@@ -27,15 +63,25 @@
         </div>
         <div class="fe__element">
           <h3>date dropdown</h3>
-              <button class="dropdown dropdown__date" type="button"><span class="dropdown__text">ДД.ММ.ГГГГ</span>
-                <div class="dropdown__icon"><i class="material-icons">expand_more</i></div>
-              </button>
+              <div class="dropdown">
+                <input type="checkbox" name="dropdown-d" id="dropdown-d">
+                <label for="dropdown-d">
+                  <div class="dropdown__btn dropdown__date"><span class="dropdown__text">ДД.ММ.ГГГГ</span>
+                    <div class="dropdown__icon"><i class="material-icons">expand_more</i></div>
+                  </div>
+                </label>
+              </div>
         </div>
         <div class="fe__element">
           <h3>filter date dropdown</h3>
-              <button class="dropdown dropdown__filterdate" type="button"><span class="dropdown__text">19 авг - 23 авг</span>
-                <div class="dropdown__icon"><i class="material-icons">expand_more</i></div>
-              </button>
+              <div class="dropdown">
+                <input type="checkbox" name="dropdown-fd" id="dropdown-fd">
+                <label for="dropdown-fd">
+                  <div class="dropdown__btn dropdown__filterdate"><span class="dropdown__text">19 авг - 23 авг</span>
+                    <div class="dropdown__icon"><i class="material-icons">expand_more</i></div>
+                  </div>
+                </label>
+              </div>
         </div>
         <div class="fe__element">
           <h3>subscription text field</h3>
@@ -46,9 +92,92 @@
         </div>
         <div class="fe__element">
           <h3>dropdown</h3>
-              <button class="dropdown dropdown__prefs" type="button"><span class="dropdown__text">2 спальни, 2 кровати...</span>
-                <div class="dropdown__icon"><i class="material-icons">expand_more</i></div>
-              </button>
+              <div class="dropdown">
+                <input type="checkbox" name="dropdown-p" id="dropdown-p">
+                <label for="dropdown-p">
+                  <div class="dropdown__btn dropdown__prefs"><span class="dropdown__text">2 спальни, 2 кровати...</span>
+                    <div class="dropdown__icon"><i class="material-icons">expand_more</i></div>
+                  </div>
+                </label>
+                <div class="dropdown__prefs-open">
+                  <div class="dropdown-item"><span>спальни</span>
+                    <div class="countbuttons">
+                      <div class="minus-circle">-</div>
+                      <div class="count">0</div>
+                      <div class="plus-circle">+</div>
+                    </div>
+                  </div>
+                  <div class="dropdown-item"><span>кровати</span>
+                    <div class="countbuttons">
+                      <div class="minus-circle">-</div>
+                      <div class="count">0</div>
+                      <div class="plus-circle">+</div>
+                    </div>
+                  </div>
+                  <div class="dropdown-item"><span>спальные комнаты</span>
+                    <div class="countbuttons">
+                      <div class="minus-circle">-</div>
+                      <div class="count">0</div>
+                      <div class="plus-circle">+</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+        </div>
+        <div class="fe__element">
+              <div class="checkbox-item-expand">
+                <input type="checkbox" name="openexpand" id="openexpand" value="">
+                <label for="openexpand">
+                  <div class="checkbox__expand-btn">
+                    <h3>expandable checkbox list</h3>
+                    <div class="dropdown__icon"><i class="material-icons">expand_more</i></div>
+                  </div>
+                </label>
+                <div class="checkbox-block-exp">
+                  <div class="checkbox-item">
+                    <input type="checkbox" name="expand" id="check_breakfast" value="breakfast">
+                    <label for="check_breakfast">
+                      <div class="custom-checkbox"></div>
+                      <div class="checkbox-description">Завтрак</div>
+                    </label>
+                  </div>
+                  <div class="checkbox-item"> 
+                    <input type="checkbox" name="expand" id="check_worktable" value="worktable">
+                    <label for="check_worktable">
+                      <div class="custom-checkbox"></div>
+                      <div class="checkbox-description">Письменный стол</div>
+                    </label>
+                  </div>
+                  <div class="checkbox-item">
+                    <input type="checkbox" name="expand" id="check_kidchair" value="kidchair">
+                    <label for="check_kidchair">
+                      <div class="custom-checkbox"></div>
+                      <div class="checkbox-description">Стул для кормления</div>
+                    </label>
+                  </div>
+                  <div class="checkbox-item">
+                    <input type="checkbox" name="expand" id="check_kidbed" value="kidbed">
+                    <label for="check_kidbed">
+                      <div class="custom-checkbox"></div>
+                      <div class="checkbox-description">Кроватка</div>
+                    </label>
+                  </div>
+                  <div class="checkbox-item">
+                    <input type="checkbox" name="expand" id="check_tv" value="tv">
+                    <label for="check_tv">
+                      <div class="custom-checkbox"></div>
+                      <div class="checkbox-description">Телевизор</div>
+                    </label>
+                  </div>
+                  <div class="checkbox-item">
+                    <input type="checkbox" name="expand" id="check_shampoo" value="shampoo">
+                    <label for="check_shampoo">
+                      <div class="custom-checkbox"></div>
+                      <div class="checkbox-description">Шампунь</div>
+                    </label>
+                  </div>
+                </div>
+              </div>
         </div>
       </div>
       <div class="fe__2-column">
@@ -166,61 +295,6 @@
                 </div>
               </div>
         </div>
-        <div class="fe__element">
-              <div class="checkbox-item-expand">
-                <input type="checkbox" name="openexpand" id="openexpand" value="">
-                <label for="openexpand">
-                  <div class="checkbox__expand-btn">
-                    <h3>expandable checkbox list</h3>
-                    <div class="dropdown__icon"><i class="material-icons">expand_more</i></div>
-                  </div>
-                </label>
-                <div class="checkbox-block-exp">
-                  <div class="checkbox-item">
-                    <input type="checkbox" name="expand" id="check_breakfast" value="breakfast">
-                    <label for="check_breakfast">
-                      <div class="custom-checkbox"></div>
-                      <div class="checkbox-description">Завтрак</div>
-                    </label>
-                  </div>
-                  <div class="checkbox-item"> 
-                    <input type="checkbox" name="expand" id="check_worktable" value="worktable">
-                    <label for="check_worktable">
-                      <div class="custom-checkbox"></div>
-                      <div class="checkbox-description">Письменный стол</div>
-                    </label>
-                  </div>
-                  <div class="checkbox-item">
-                    <input type="checkbox" name="expand" id="check_kidchair" value="kidchair">
-                    <label for="check_kidchair">
-                      <div class="custom-checkbox"></div>
-                      <div class="checkbox-description">Стул для кормления</div>
-                    </label>
-                  </div>
-                  <div class="checkbox-item">
-                    <input type="checkbox" name="expand" id="check_kidbed" value="kidbed">
-                    <label for="check_kidbed">
-                      <div class="custom-checkbox"></div>
-                      <div class="checkbox-description">Кроватка</div>
-                    </label>
-                  </div>
-                  <div class="checkbox-item">
-                    <input type="checkbox" name="expand" id="check_tv" value="tv">
-                    <label for="check_tv">
-                      <div class="custom-checkbox"></div>
-                      <div class="checkbox-description">Телевизор</div>
-                    </label>
-                  </div>
-                  <div class="checkbox-item">
-                    <input type="checkbox" name="expand" id="check_shampoo" value="shampoo">
-                    <label for="check_shampoo">
-                      <div class="custom-checkbox"></div>
-                      <div class="checkbox-description">Шампунь</div>
-                    </label>
-                  </div>
-                </div>
-              </div>
-        </div>
       </div>
       <div class="fe__3-column">
         <div class="fe__element">
@@ -252,11 +326,21 @@
         </div>
         <div class="fe__element">
           <h3>pagination</h3>
+              <div class="pagination">
+                <div class="number-line">
+                  <div class="currentpage">1</div>
+                  <div class="page1">2</div>
+                  <div class="page2">3</div>
+                  <div class="page3">...</div>
+                  <div class="page4">15</div>
+                  <div class="nextpage"></div>
+                </div>
+                <div class="comment-line">1 – 12 из 100+ вариантов аренды</div>
+              </div>
         </div>
       </div>
     </div>
     <div class="fe__other">
-      <div class="fe__element"></div>
       <div class="fe__element">
             <div class="feature__item">
               <div class="material-icons feature__icon">insert_emoticon</div>
@@ -282,6 +366,34 @@
               </dl>
             </div>
             <div class="feature__underline "></div>
+      </div>
+      <div class="fe__element">
+            <div class="commentblock">
+              <div class="user">
+                <div class="user-avatar"></div>
+                <div class="user-stat">
+                  <div class="user-name">Имя Фамилия </div>
+                  <div class="user-date">5 дней назад</div>
+                </div>
+              </div>
+              <div class="comment">
+                <div class="like-item">
+                  <input type="checkbox" name="like" id="like_buttonc" value="like" checked>
+                  <label for="like_buttonc">
+                    <div class="custom-like">
+                      <div class="material-icons like-icon">favorite_border</div>
+                      <div class="material-icons like-icon--active">favorite</div>
+                      <div class="like-count">12</div>
+                    </div>
+                  </label>
+                </div>
+                <p>
+                   Великолепный матрас на кровати в основной спальне!
+                  А пуфик вообще потрясающий. <br>И стены, действительно, шумоподавляющие.
+                  Выкрикивал комплименты повару — никто не жаловался из соседей.
+                </p>
+              </div>
+            </div>
       </div>
     </div>
     <script src="./script.js"></script>

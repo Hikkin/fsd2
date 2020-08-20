@@ -14,29 +14,84 @@ mixin textfield-subscription
 
 
 mixin dropdown-guest
-  button(class="dropdown dropdown__guest" type="button")
-    span(class="dropdown__text") Сколько гостей
-    .dropdown__icon
-      i(class="material-icons") expand_more
+  .dropdown
+    input(type="checkbox" name="dropdown-g" id="dropdown-g")
+    label(for="dropdown-g")
+      .dropdown__btn.dropdown__guest
+        span(class="dropdown__text") Сколько гостей
+        .dropdown__icon
+          i(class="material-icons") expand_more
+    .dropdown__guest-open
+      .dropdown-item
+        span взрослые
+        .countbuttons
+          .minus-circle -
+          .count 0
+          .plus-circle +
+      .dropdown-item
+        span дети
+        .countbuttons
+          .minus-circle -
+          .count 0
+          .plus-circle +
+      .dropdown-item
+        span младенцы
+        .countbuttons
+          .minus-circle -
+          .count 0
+          .plus-circle +
+      .dropdown-item
+        .btn
+          button.btn__onlytext очистить
+        .btn
+          button.btn__onlytext применить
+
 
 mixin dropdown-date
-  button(class="dropdown dropdown__date" type="button")
-    span(class="dropdown__text") ДД.ММ.ГГГГ
-    .dropdown__icon
-      i(class="material-icons") expand_more
+  .dropdown
+    input(type="checkbox" name="dropdown-d" id="dropdown-d")
+    label(for="dropdown-d")
+      .dropdown__btn.dropdown__date
+        span(class="dropdown__text") ДД.ММ.ГГГГ
+        .dropdown__icon
+          i(class="material-icons") expand_more
 
 mixin dropdown-filterdate
-  button(class="dropdown dropdown__filterdate" type="button")
-    span(class="dropdown__text") 19 авг - 23 авг
-    .dropdown__icon
-      i(class="material-icons") expand_more
+  .dropdown
+    input(type="checkbox" name="dropdown-fd" id="dropdown-fd")
+    label(for="dropdown-fd")
+      .dropdown__btn.dropdown__filterdate
+        span(class="dropdown__text") 19 авг - 23 авг
+        .dropdown__icon
+          i(class="material-icons") expand_more
 
 mixin dropdown-prefs
-  button(class="dropdown dropdown__prefs" type="button")
-    span(class="dropdown__text") 2 спальни, 2 кровати...
-    .dropdown__icon
-      i(class="material-icons") expand_more
-
+  .dropdown
+    input(type="checkbox" name="dropdown-p" id="dropdown-p")
+    label(for="dropdown-p")
+      .dropdown__btn.dropdown__prefs
+        span(class="dropdown__text") 2 спальни, 2 кровати...
+        .dropdown__icon
+          i(class="material-icons") expand_more
+    .dropdown__prefs-open
+      .dropdown-item
+        span спальни
+        .countbuttons
+          .minus-circle -
+          .count 0
+          .plus-circle +
+      .dropdown-item
+        span кровати
+        .countbuttons
+          .minus-circle -
+          .count 0
+          .plus-circle +
+      .dropdown-item
+        span спальные комнаты
+        .countbuttons
+          .minus-circle -
+          .count 0
+          .plus-circle +
 
 
 
@@ -223,3 +278,36 @@ mixin feature-cosiness(space="")
       dd Номер оснащён камином
   div(class="feature__underline " + space)
 
+
+
+mixin pagination
+  .pagination
+    .number-line
+      .currentpage 1
+      .page1 2
+      .page2 3
+      .page3 ...
+      .page4 15
+      .nextpage
+    .comment-line 1 – 12 из 100+ вариантов аренды
+
+
+mixin comment
+  .commentblock
+    .user
+      .user-avatar
+      .user-stat
+        .user-name Имя Фамилия 
+        .user-date 5 дней назад
+    .comment
+      .like-item
+        input(type="checkbox" name="like" id="like_buttonc" value="like" checked)
+        label(for="like_buttonc")
+          .custom-like
+            div(class="material-icons like-icon") favorite_border
+            div(class="material-icons like-icon--active") favorite
+            .like-count 12
+      p 
+        | Великолепный матрас на кровати в основной спальне!
+        | А пуфик вообще потрясающий. <br>И стены, действительно, шумоподавляющие.
+        | Выкрикивал комплименты повару — никто не жаловался из соседей.
