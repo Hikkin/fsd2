@@ -179,14 +179,14 @@ mixin radiobutton
       label(for="radio_male")
         .custom-radio
         .radio-text Мужчина
-      
-   
+
+
     .radio-female
       input(type="radio" name="sex" id="radio_female" value="sex_female")     
       label(for="radio_female")
         .custom-radio
         .radio-text Женщина
-      
+
 mixin togglebutton
   .toggle-item
     input(type="checkbox" name="toggle" id="toggle_spec" value="allow_spec-email")
@@ -204,12 +204,12 @@ mixin likebutton
         .like-count 2
 
 mixin ratebutton
-    .rate-box
-      span(id="star0" class="material-icons star")
-      span(id="star1" class="material-icons star")
-      span(id="star2" class="material-icons star")
-      span(id="star3" class="material-icons star")
-      span(id="star4" class="material-icons star_border")
+  .rate-box
+    span(id="star0" class="material-icons star")
+    span(id="star1" class="material-icons star")
+    span(id="star2" class="material-icons star")
+    span(id="star3" class="material-icons star")
+    span(id="star4" class="material-icons star_border")
 
 
 
@@ -235,14 +235,14 @@ mixin button-border
   .btn
     button.btn__border click me
       .btn__border--gradient
-      
-      
+
+
 mixin slider
   .slider
     .slider-ball-1
     .slider-ball-2 
     .slider-betweenball
-     
+
 
 mixin button-onlytext
   .btn
@@ -311,3 +311,40 @@ mixin comment
         | Великолепный матрас на кровати в основной спальне!
         | А пуфик вообще потрясающий. <br>И стены, действительно, шумоподавляющие.
         | Выкрикивал комплименты повару — никто не жаловался из соседей.
+
+
+
+mixin headerunsign
+  .header
+    .headerlogo
+      img(src="images/logo.svg", alt="logo")
+    .headercontrol
+      a О нас
+      a Услуги
+      .material-icons expand_more
+      a Вакансии
+      a Новости
+      a Соглашения
+      .material-icons expand_more
+      +button-border
+      +button
+mixin headersign
+  .header
+    .headerlogo
+      img(src="images/logo.svg", alt="logo")
+    .headercontrol
+      a О нас
+      a Услуги
+      .material-icons expand_more
+      a Вакансии
+      a Новости
+      a Соглашения
+      .material-icons expand_more
+      .headeruser
+        p Юлий Цезарь
+mixin footer
+  .footer
+    .footertop
+    .footerbot
+mixin copyright
+  .copyright

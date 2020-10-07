@@ -1,0 +1,1 @@
+{"version":3,"sources":["header.scss"],"names":[],"mappings":"AAAA,QACE,MAAO,KACP,QAAS,YACT,gBAAiB,cACjB,QAAS,EAAE,MACX,OAAQ,EAAE","file":"header.min.css","sourcesContent":[".header {\r\n    width: 70px;\r\n    display: inline-flex;\r\n    justify-content: space-between;\r\n    padding: 0 140px;\r\n    margin: 0 auto;\r\n}"]}

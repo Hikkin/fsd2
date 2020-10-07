@@ -897,3 +897,72 @@ input[type="checkbox"]:checked + label .custom-like {
   margin-top: 8px;
   width: 613px;
   margin-left: 14px; }
+.header {
+  width: 14;
+  height: 70px;
+  display: flex;
+  justify-content: space-between;
+  box-shadow: 0px 10px 20px rgba(31, 32, 65, 0.05);
+  padding: 0 140px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  font-family: Open Sans;
+  color: rgba(31, 32, 65, 0.75);
+  z-index: -2; }
+
+.footer {
+  height: 443px;
+  margin-top: 20px;
+  margin-bottom: 20px; }
+
+.copyright {
+  height: 367px;
+  width: 768px;
+  box-shadow: 0px 10px 20px rgba(31, 32, 65, 0.05);
+  margin-top: 20px;
+  margin-bottom: 20px; }
+
+.headerlogo {
+  margin: auto 0; }
+
+.headercontrol {
+  z-index: 0;
+  font-size: 14px;
+  line-height: 17px;
+  display: inline-flex;
+  margin: auto 0; }
+  .headercontrol a {
+    margin: auto 10px; }
+  .headercontrol p {
+    margin: auto 0; }
+  .headercontrol .material-icons {
+    margin: auto 0 auto -10px;
+    padding: 0;
+    font-size: 24px;
+    line-height: 20px;
+    display: inline-flex;
+    align-items: center;
+    text-align: center; }
+  .headercontrol .btn {
+    margin-left: 20px; }
+    .headercontrol .btn button {
+      height: 30px; }
+      .headercontrol .btn button .btn__border--gradient {
+        height: 34px;
+        margin-top: -24.5px; }
+    .headercontrol .btn .btn__default {
+      height: 34px;
+      width: 196px;
+      margin-top: -2px; }
+
+.headeruser {
+  display: flex;
+  margin-left: 20px; }
+
+.headeruser::before {
+  display: block;
+  content: " ";
+  margin-right: 20px;
+  width: 1px;
+  height: 30px;
+  background-color: rgba(31, 32, 65, 0.1); }
