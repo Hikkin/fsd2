@@ -18,15 +18,8 @@
   height: 443px;
   margin-top: 20px;
   margin-bottom: 20px;
-}
-
-.footer hr {
-  padding: 0;
-  margin: 0;
-  border: none;
-  color: rgba(31, 32, 65, 0.1);
-  height: 1px;
-  background-color: rgba(31, 32, 65, 0.1);
+  font-family: Open Sans;
+  color: rgba(31, 32, 65, 0.75);
 }
 
 .copyright {
@@ -38,6 +31,8 @@
   box-shadow: 0px 10px 20px rgba(31, 32, 65, 0.05);
   margin-top: 20px;
   margin-bottom: 20px;
+  font-family: Open Sans;
+  color: rgba(31, 32, 65, 0.75);
 }
 
 .headerlogo {
@@ -105,9 +100,10 @@
 
 .footertop {
   position: relative;
-  padding: 100px 140px;
+  padding: 94px 140px;
   display: flex;
   justify-content: space-between;
+  box-shadow: 0px 1px 0px rgba(31, 32, 65, 0.1);
 }
 
 .footertop p {
@@ -140,6 +136,12 @@
   background: linear-gradient(180deg, #a77eff 0%, #668aff 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
+}
+
+p.title {
+  text-transform: uppercase;
+  color: #1F2041;
+  font-weight: bold;
 }
 
 /*# sourceMappingURL=headerfooter.css.map */
