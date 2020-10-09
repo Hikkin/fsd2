@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="./images/ico.png">
+    <link rel="stylesheet" href="./fonts/fonts.css">
+    <link rel="stylesheet" href="./fonts/all.css">
+    <link rel="stylesheet" href="./style.css">
+    <title>Kit | Headers footers</title>
+    <!--mixin cardlogin-->
+    <!--mixin cardbuy-->
+    <!--mixin cardroompreview -->
+    <body style="background-color: pink">
+      <div class="cardcontent">
+            <div class="cardsearch">
+              <h1>Найдём номера под ваши пожелания</h1>
+              <div class="cardsearch-date">
+                <div class="cardsearch-date-in">
+                  <h3>прибытие</h3>
+                      <div class="dropdown">
+                        <input type="checkbox" name="dropdown-d" id="dropdown-d">
+                        <label for="dropdown-d">
+                          <div class="dropdown__btn dropdown__date"><span class="dropdown__text">ДД.ММ.ГГГГ</span>
+                            <div class="dropdown__icon"><i class="material-icons">expand_more</i></div>
+                          </div>
+                        </label>
+                      </div>
+                </div>
+                <div class="cardsearch-date-out">
+                  <h3>выезд</h3>
+                      <div class="dropdown">
+                        <input type="checkbox" name="dropdown-d" id="dropdown-d">
+                        <label for="dropdown-d">
+                          <div class="dropdown__btn dropdown__date"><span class="dropdown__text">ДД.ММ.ГГГГ</span>
+                            <div class="dropdown__icon"><i class="material-icons">expand_more</i></div>
+                          </div>
+                        </label>
+                      </div>
+                </div>
+              </div>
+              <div class="cardsearch-guest">
+                <h3>гости</h3>
+                    <div class="dropdown">
+                      <input type="checkbox" name="dropdown-g" id="dropdown-g">
+                      <label for="dropdown-g">
+                        <div class="dropdown__btn dropdown__guest"><span class="dropdown__text">Сколько гостей</span>
+                          <div class="dropdown__icon"><i class="material-icons">expand_more</i></div>
+                        </div>
+                      </label>
+                      <div class="dropdown__guest-open">
+                        <div class="dropdown-item"><span>взрослые</span>
+                          <div class="countbuttons">
+                            <div class="minus-circle">-</div>
+                            <div class="count">0</div>
+                            <div class="plus-circle">+</div>
+                          </div>
+                        </div>
+                        <div class="dropdown-item"><span>дети</span>
+                          <div class="countbuttons">
+                            <div class="minus-circle">-</div>
+                            <div class="count">0</div>
+                            <div class="plus-circle">+</div>
+                          </div>
+                        </div>
+                        <div class="dropdown-item"><span>младенцы</span>
+                          <div class="countbuttons">
+                            <div class="minus-circle">-</div>
+                            <div class="count">0</div>
+                            <div class="plus-circle">+</div>
+                          </div>
+                        </div>
+                        <div class="dropdown-item">
+                          <div class="btn">
+                            <button class="btn__onlytext">очистить</button>
+                          </div>
+                          <div class="btn">
+                            <button class="btn__onlytext">применить</button>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+              </div>
+                  <div class="btn">
+                    <button class="btn__wide">click me
+                      <div class="btn__wide__arrow">arrow_forward</div>
+                    </button>
+                  </div>
+            </div>
+            <div class="cardregister">
+              <h1>Регистрация аккаунта</h1>
+              <input class="textfield textfield__email" type="text" placeholder="Имя">
+              <input class="textfield textfield__email" type="text" placeholder="Фамилия">
+                  <div class="radio__block">
+                    <div class="radio-male">
+                      <input type="radio" name="sex" id="radio_male" value="sex_male">
+                      <label for="radio_male">
+                        <div class="custom-radio"></div>
+                        <div class="radio-text">Мужчина</div>
+                      </label>
+                    </div>
+                    <div class="radio-female">
+                      <input type="radio" name="sex" id="radio_female" value="sex_female">
+                      <label for="radio_female">
+                        <div class="custom-radio"></div>
+                        <div class="radio-text">Женщина</div>
+                      </label>
+                    </div>
+                  </div>
+              <h3>Дата рождения</h3>
+                  <input class="textfield textfield__mask" type="text" placeholder="ДД.ММ.ГГГГ">
+              <h3>Данные для входа в сервис</h3>
+                  <input class="textfield textfield__email" type="email" placeholder="Email">
+              <input class="textfield textfield__email" type="password" placeholder="Пароль">
+                  <div class="toggle-item">
+                    <input type="checkbox" name="toggle" id="toggle_spec" value="allow_spec-email">
+                    <label for="toggle_spec">
+                      <div class="custom-toggle"></div>
+                      <div class="toggle-text">Получать спецпредложения</div>
+                    </label>
+                  </div>
+                  <div class="btn">
+                    <button class="btn__wide">click me
+                      <div class="btn__wide__arrow">arrow_forward</div>
+                    </button>
+                  </div>
+              <div class="cardregistertologin">
+                <p>Уже есть аккаунт на Toxin</p>
+                    <div class="btn">
+                      <div class="btn__border--gradient">
+                        <button class="btn__border">click me</button>
+                      </div>
+                    </div>
+              </div>
+            </div>
+      </div>
+    </body>
+  </head>
+</html>

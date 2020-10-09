@@ -233,8 +233,9 @@ mixin button
 
 mixin button-border
   .btn
-    button.btn__border click me
-      .btn__border--gradient
+    .btn__border--gradient
+      button.btn__border click me
+      
 
 
 mixin slider
@@ -344,6 +345,9 @@ mixin headersign
       .material-icons expand_more
       .headeruser
         p Юлий Цезарь
+
+
+
 mixin footer
   .footer
     .footertop
@@ -377,6 +381,8 @@ mixin footer
         <i class="fab fa-twitter"></i>
         <i class="fab fa-facebook-square" aria-hidden="true"></i>
         <i class="fab fa-instagram"></i>
+
+
 mixin copyright
   .copyright
     img(src="images/logo.svg", alt="logo")
@@ -385,3 +391,43 @@ mixin copyright
       <i class="fab fa-twitter"></i>
       <i class="fab fa-facebook-square" aria-hidden="true"></i>
       <i class="fab fa-instagram"></i>
+
+
+
+
+
+
+mixin cardsearch
+  .cardsearch
+    h1 Найдём номера под ваши пожелания
+    .cardsearch-date
+      .cardsearch-date-in
+        h3 прибытие
+        +dropdown-date
+      .cardsearch-date-out
+        h3 выезд
+        +dropdown-date
+    .cardsearch-guest
+      h3 гости
+      +dropdown-guest
+    +button-wide
+
+mixin cardregister
+  .cardregister
+    h1 Регистрация аккаунта
+    input(class="textfield textfield__email" type="text" placeholder="Имя")
+    input(class="textfield textfield__email" type="text" placeholder="Фамилия")
+    +radiobutton
+    h3 Дата рождения
+    +textfield-mask
+    h3 Данные для входа в сервис
+    +textfield-email
+    input(class="textfield textfield__email" type="password" placeholder="Пароль")
+    +togglebutton
+    +button-wide
+    .cardregistertologin
+      p Уже есть аккаунт на Toxin
+      +button-border
+//mixin cardlogin
+//mixin cardbuy
+//mixin cardroompreview 

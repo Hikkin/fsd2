@@ -3,16 +3,22 @@ Dark Shade #1f2041
 Purple #bc9cff
 Green #6fccf97
 */
+::placeholder {
+  font-family: Open Sans;
+  font-style: normal; }
+
 h1 {
-  font-family: Quicksand;
+  font-family: Open Sans;
   font-style: normal;
   font-weight: bold;
   font-size: 24px;
   line-height: 30px;
+  margin: 0;
+  margin-bottom: 20px;
   color: #1f2041; }
 
 h2 {
-  font-family: Quicksand;
+  font-family: Open Sans;
   font-style: normal;
   font-weight: bold;
   font-size: 19px;
@@ -20,8 +26,9 @@ h2 {
   color: #1f2041; }
 
 h3 {
-  margin: 15px 0 0 0;
-  font-family: Montserrat;
+  margin: 0;
+  margin-top: 20px;
+  font-family: Open Sans;
   font-style: normal;
   font-weight: bold;
   font-size: 12px;
@@ -32,7 +39,7 @@ h3 {
 body {
   margin: 0;
   padding: 0;
-  font-family: Montserrat;
+  font-family: Open Sans;
   font-style: normal;
   font-weight: normal;
   font-size: 14px;
@@ -50,7 +57,7 @@ body {
   border-radius: 4px;
   outline: none;
   transition: border 0.1s linear;
-  font-family: Montserrat;
+  font-family: Open Sans;
   font-size: 14px;
   line-height: 24px;
   font-style: normal;
@@ -677,26 +684,26 @@ input[type="checkbox"]:checked + label .custom-like {
   opacity: 0.5; }
 
 .btn__border--gradient {
-  position: absolute;
-  width: 96px;
+  position: relative;
+  width: 99px;
   height: 44px;
   background: linear-gradient(180deg, #bc9cff 0%, #8ba4f9 100%);
   border-radius: 22px;
   transition: opacity .1s linear;
-  margin-top: -29.5px;
-  margin-left: -2px;
-  z-index: -1; }
+  cursor: pointer; }
 
 .btn__border {
-  position: relative;
+  position: absolute;
   margin-left: 2px;
-  width: 92px;
+  width: 95px;
   height: 40px;
   border-radius: 22px;
   background: #fff;
-  color: #bc9cff; }
+  color: #bc9cff;
+  z-index: 2;
+  margin-top: 2px; }
 
-.btn__border:hover .btn__border--gradient {
+.btn__border--gradient:hover {
   transition: opacity .1s linear;
   opacity: 0.5; }
 
@@ -954,15 +961,15 @@ input[type="checkbox"]:checked + label .custom-like {
     text-align: center; }
   .headercontrol .btn {
     margin-left: 20px; }
-    .headercontrol .btn button {
-      height: 30px; }
-      .headercontrol .btn button .btn__border--gradient {
-        height: 34px;
-        margin-top: -24.5px; }
     .headercontrol .btn .btn__default {
       height: 34px;
       width: 196px;
       margin-top: -2px; }
+    .headercontrol .btn .btn__border--gradient {
+      margin-top: -2px;
+      height: 34px; }
+      .headercontrol .btn .btn__border--gradient .btn__border {
+        height: 30px; }
 
 .headeruser {
   display: flex;
@@ -1014,3 +1021,49 @@ p.title {
   text-transform: uppercase;
   color: #1F2041;
   font-weight: bold; }
+.cardcontent {
+  margin: 150px 140px; }
+
+.cardsearch {
+  padding: 40px 30px 30px 20px;
+  background-color: #fff;
+  width: fit-content;
+  border: 1px solid rgba(0, 0, 0, 0.12);
+  box-sizing: border-box;
+  box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.2);
+  border-radius: 4px; }
+  .cardsearch h1 {
+    width: 320px; }
+  .cardsearch .cardsearch-guest + .btn {
+    margin: 0;
+    margin-top: 30px; }
+
+.cardsearch-date {
+  display: inline-flex; }
+
+.cardsearch-date-out {
+  margin-left: 20px; }
+
+.cardregister {
+  padding: 40px 30px 30px 20px;
+  background-color: #fff;
+  width: fit-content;
+  border: 1px solid rgba(0, 0, 0, 0.12);
+  box-sizing: border-box;
+  box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.2);
+  border-radius: 4px;
+  margin-top: 40px;
+  z-index: -2; }
+  .cardregister h1 {
+    width: 320px; }
+
+.cardregistertologin {
+  z-index: +2;
+  margin: auto 0;
+  margin-top: 30px;
+  display: flex;
+  justify-content: space-between; }
+  .cardregistertologin p {
+    color: #000000;
+    font-size: 14px;
+    line-height: 34px; }

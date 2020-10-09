@@ -1,4 +1,3 @@
-
 .btn {
   margin: 10px 0;
   user-select: none;
@@ -17,8 +16,8 @@
   border-radius: 22px;
   cursor: pointer;
 }
-.btn__default {
 
+.btn__default {
   width: 99px;
   height: 44px;
   background: linear-gradient(180deg, #bc9cff 0%, #8ba4f9 100%);
@@ -26,22 +25,22 @@
   color: #fff;
   transition: opacity .1s linear;
 }
+
 .btn__default:hover {
   transition: opacity .1s linear;
   opacity: 0.5;
 }
 
-
-
 .btn__border--gradient {
   position: relative;
   width: 99px;
-  height: 44px; 
+  height: 44px;
   background: linear-gradient(180deg, #bc9cff 0%, #8ba4f9 100%);
   border-radius: 22px;
   transition: opacity .1s linear;
   cursor: pointer;
 }
+
 .btn__border {
   position: absolute;
   margin-left: 2px;
@@ -53,25 +52,22 @@
   z-index: 2;
   margin-top: 2px;
 }
+
 .btn__border--gradient:hover {
   transition: opacity .1s linear;
   opacity: 0.5;
 }
-
-
 
 .btn__onlytext {
   background: transparent;
   color: rgba(31, 32, 65, 0.5);
   transition: color .1s linear;
 }
+
 .btn__onlytext:hover {
   transition: color .1s linear;
   color: #bc9cff;
 }
-
-
-
 
 .btn__wide {
   position: relative;
@@ -82,10 +78,12 @@
   color: #fff;
   transition: opacity .1s linear;
 }
+
 .btn__wide:hover {
   transition: opacity .1s linear;
   opacity: 0.5;
 }
+
 .btn__wide__arrow {
   position: absolute;
   font-family: Material Icons;
@@ -97,3 +95,5 @@
   margin-left: 280px;
   color: #FFFFFF;
 }
+
+/*# sourceMappingURL=button.css.map */

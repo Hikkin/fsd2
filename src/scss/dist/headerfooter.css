@@ -69,19 +69,19 @@
   margin-left: 20px;
 }
 
-.headercontrol .btn button {
-  height: 30px;
-}
-
-.headercontrol .btn button .btn__border--gradient {
-  height: 34px;
-  margin-top: -24.5px;
-}
-
 .headercontrol .btn .btn__default {
   height: 34px;
   width: 196px;
   margin-top: -2px;
+}
+
+.headercontrol .btn .btn__border--gradient {
+  margin-top: -2px;
+  height: 34px;
+}
+
+.headercontrol .btn .btn__border--gradient .btn__border {
+  height: 30px;
 }
 
 .headeruser {
