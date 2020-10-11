@@ -428,6 +428,17 @@ mixin cardregister
     .cardregistertologin
       p Уже есть аккаунт на Toxin
       +button-border
-//mixin cardlogin
+
+
+
+mixin cardlogin
+  .cardlogin
+    h1 Войти
+    input(class="textfield textfield__email" type="email" placeholder="Email")
+    input(class="textfield textfield__email" type="password" placeholder="Пароль")
+    +button-wide
+    .cardregistertologin
+      p Нет аккаунта на Toxin?
+      +button-border
 //mixin cardbuy
 //mixin cardroompreview 
