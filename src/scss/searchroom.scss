@@ -1,0 +1,33 @@
+.tabs {
+    display: flex;
+}
+
+.lefttab {
+    margin-left: 8%;
+}
+
+.righttab {
+    width: fit-content;
+    margin-top: 30px;
+    margin-left: 60px;
+    margin-right: 8%;
+}
+
+.tabrooms {
+    display: block
+}
+
+.tabitem {
+    margin-right: 12px;
+    margin-bottom: 20px;
+    display: inline-flex;
+
+}
+
+.paginationsearch {
+    .pagination{
+        margin: 0 auto;
+    }
+    margin-top: 20px;
+    margin-bottom: 70px;
+}

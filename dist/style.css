@@ -3,6 +3,10 @@ Dark Shade #1f2041
 Purple #bc9cff
 Green #6fccf97
 */
+body {
+  margin: 0;
+  padding: 0; }
+
 ::placeholder {
   font-family: Open Sans;
   font-style: normal; }
@@ -15,7 +19,8 @@ h1 {
   line-height: 30px;
   margin: 0;
   margin-bottom: 20px;
-  color: #1f2041; }
+  color: #1f2041;
+  user-select: none; }
 
 h2 {
   font-family: Open Sans;
@@ -23,11 +28,13 @@ h2 {
   font-weight: bold;
   font-size: 19px;
   line-height: 24px;
+  user-select: none;
   color: #1f2041; }
 
 h3 {
   margin: 0;
   margin-top: 20px;
+  user-select: none;
   font-family: Open Sans;
   font-style: normal;
   font-weight: bold;
@@ -161,7 +168,7 @@ body {
   user-select: none;
   margin-top: -7px;
   position: absolute;
-  width: 320px;
+  width: 266px;
   height: 160px;
   background: #FFFFFF;
   z-index: 2;
@@ -224,7 +231,7 @@ input[type="checkbox"]:checked + label .dropdown__btn .dropdown__icon {
   color: rgba(31, 32, 65, 0.75); }
 
 .dropdown__guest {
-  width: 320px; }
+  width: 266px; }
 
 .dropdown-item {
   display: flex;
@@ -781,6 +788,7 @@ input[type="checkbox"]:checked + label .custom-like {
   border: 2px solid #FFFFFF;
   border-radius: 10px; }
 .pagination {
+  width: fit-content;
   margin-top: 5px;
   font-family: Open Sans;
   font-style: normal;
@@ -912,8 +920,6 @@ input[type="checkbox"]:checked + label .custom-like {
   justify-content: space-between;
   box-shadow: 0px 10px 20px rgba(31, 32, 65, 0.05);
   padding: 0 140px;
-  margin-top: 20px;
-  margin-bottom: 20px;
   font-family: Open Sans;
   color: rgba(31, 32, 65, 0.75);
   z-index: -2; }
@@ -921,8 +927,6 @@ input[type="checkbox"]:checked + label .custom-like {
 .footer {
   background-color: #fff;
   height: 443px;
-  margin-top: 20px;
-  margin-bottom: 20px;
   font-family: Open Sans;
   color: rgba(31, 32, 65, 0.75); }
 
@@ -1087,3 +1091,157 @@ p.title {
 
 .cardcontent3 {
   margin-left: 40px; }
+
+.cardbuy {
+  padding: 40px 30px 30px 30px;
+  background-color: #fff;
+  width: fit-content;
+  border: 1px solid rgba(0, 0, 0, 0.12);
+  box-sizing: border-box;
+  box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.2);
+  border-radius: 4px;
+  margin-top: 40px;
+  z-index: -2; }
+
+.cardroompreview {
+  width: fit-content;
+  background: #FFFFFF;
+  box-shadow: 0px 10px 20px rgba(31, 32, 65, 0.05);
+  border-radius: 4px; }
+
+.roompreviewtop {
+  width: 270px;
+  height: 151px; }
+
+.roompreviewprice {
+  padding: 0 20px;
+  display: flex;
+  justify-content: space-between; }
+
+.roomnumber {
+  font-family: Quicksand;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 17px;
+  color: #1F2041; }
+
+.roomprice {
+  font-family: Open Sans;
+  font-size: 14px;
+  line-height: 18px;
+  color: rgba(31, 32, 65, 0.5); }
+
+.roomprevline {
+  width: 230px;
+  height: 1px;
+  margin: 0 auto;
+  text-align: center;
+  background: rgba(31, 32, 65, 0.1); }
+
+.roompreviewrating {
+  padding: 0 20px;
+  display: flex;
+  justify-content: space-between; }
+
+.roomfeedback {
+  font-family: Open Sans;
+  font-size: 14px;
+  line-height: 18px;
+  color: rgba(31, 32, 65, 0.5); }
+.landing {
+  position: relative; }
+
+.landingcard {
+  position: absolute;
+  margin-top: -52%;
+  margin-left: 9.7%; }
+
+.landingp {
+  width: 290px;
+  margin-left: 70%;
+  margin-top: -6%;
+  font-size: 16px;
+  line-height: 24px;
+  text-align: right;
+  color: rgba(31, 32, 65, 0.75); }
+
+@media screen and (max-width: 1280px) {
+  .landingp {
+    margin-top: -7%; } }
+.tabs {
+  display: flex; }
+
+.lefttab {
+  margin-left: 8%; }
+
+.righttab {
+  width: fit-content;
+  margin-top: 30px;
+  margin-left: 60px;
+  margin-right: 8%; }
+
+.tabrooms {
+  display: block; }
+
+.tabitem {
+  margin-right: 12px;
+  margin-bottom: 20px;
+  display: inline-flex; }
+
+.paginationsearch {
+  margin-top: 20px;
+  margin-bottom: 70px; }
+  .paginationsearch .pagination {
+    margin: 0 auto; }
+.roomphotos {
+  display: flex; }
+
+.photomainitem {
+  width: 68%; }
+
+.photosecitem {
+  width: 32%; }
+
+.photoitem {
+  display: block; }
+
+.roomabout {
+  margin-top: 60px;
+  margin-left: 140px; }
+
+.roomdescription {
+  display: flex; }
+
+.roomfeatures {
+  margin-right: 70px;
+  margin-bottom: 30px; }
+
+.roomregister {
+  margin-top: -25px;
+  right: 140px;
+  position: absolute; }
+
+.roomcomment {
+  display: block; }
+
+.roomother {
+  margin-bottom: 70px;
+  margin-top: 10px;
+  display: flex; }
+
+.roomrules {
+  margin-right: 70px; }
+
+.footerline {
+  border: 1px solid rgba(31, 32, 65, 0.25); }
+.registergcard {
+  display: block;
+  position: absolute;
+  margin-top: -50%;
+  margin-left: 40%; }
+
+.logincard {
+  display: none;
+  position: absolute;
+  margin-top: -42%;
+  margin-left: 40%; }

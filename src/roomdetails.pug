@@ -1,0 +1,57 @@
+doctype html
+html(lang="en")
+	head
+		meta(charset="UTF-8")
+		meta(name="viewport" content="width=device-width, initial-scale=1.0")
+		link(rel="icon" href="./images/ico.png")
+
+		link(rel="stylesheet" href="./fonts/fonts.css")
+		link(rel="stylesheet" href="./fonts/all.css")
+		link(rel="stylesheet" href="./style.css")
+
+		title Room details
+
+		include uikit.pug
+	body
+		+headerunsign
+		.roomphotos
+			.photomainitem
+				img(src="images/fullrooms/888.svg" alt="888main" width="100%")
+			.photosecitem
+				.photoitem
+					img(src="images/fullrooms/888_1.svg" alt="888-1" width="100%")
+				.photoitem
+					img(src="images/fullrooms/888_2.svg" alt="888-2" width="100%" style="margin-top: -9px")
+
+		.roomabout
+
+			.roomdescription
+				.roomfeatures
+					h2 Сведения о номере
+					+feature-comfort
+					+feature-convenience
+					+feature-cosiness
+				.roomrating
+					h2 Впечатления от номера
+				.roomregister
+					+cardregister
+
+			.roomcomment
+				h2(style="margin-bottom: 20px") Отзывы посетителей номера
+				+comment
+				+comment
+
+
+			.roomother
+				.roomrules
+					h2 Правила
+					+bulletlist
+				.roomcancel
+					h2 Отмена
+					p(style="width:340px")
+						| Бесплатная отмена в течение 48 ч. 
+						| После этого при отмене не позднее чем за 5 дн. 
+						| до прибытия вы получите полный возврат за вычетом сбора за услуги.
+		.footerline
+
+		+footer

@@ -1,0 +1,63 @@
+doctype html
+html(lang="en")
+	head
+		meta(charset="UTF-8")
+		meta(name="viewport" content="width=device-width, initial-scale=1.0")
+		link(rel="icon" href="./images/ico.png")
+
+		link(rel="stylesheet" href="./fonts/fonts.css")
+		link(rel="stylesheet" href="./fonts/all.css")
+		link(rel="stylesheet" href="./style.css")
+
+		title Search room
+
+		include uikit.pug
+	body(style="background: #FFFFFF")
+		+headerunsign
+		.tabs
+			.lefttab
+				h3 даты пребывания в отеле
+				+dropdown-filterdate
+				h3 гости
+				+dropdown-guest
+				h3 диапазон цены
+				+slider
+				h3 прочее
+				+checkbox
+				h3 доступность
+				+checkbox-rich
+				h3 удобства номера
+				+dropdown-prefs
+				h3 дополнительные удобства
+				+checkbox-expand
+			.righttab
+				h1 Номера, которые мы для вас подобрали
+				.tabrooms
+					.tabitem
+						+cardroompreview
+					.tabitem
+						+cardroompreview
+					.tabitem
+						+cardroompreview
+					.tabitem
+						+cardroompreview
+					.tabitem
+						+cardroompreview
+					.tabitem
+						+cardroompreview
+					.tabitem
+						+cardroompreview
+					.tabitem
+						+cardroompreview
+					.tabitem
+						+cardroompreview
+					.tabitem
+						+cardroompreview
+					.tabitem
+						+cardroompreview
+					.tabitem
+						+cardroompreview
+				.paginationsearch
+					+pagination
+		.footerline
+		+footer

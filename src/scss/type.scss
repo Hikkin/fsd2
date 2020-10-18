@@ -3,6 +3,10 @@ Dark Shade #1f2041
 Purple #bc9cff
 Green #6fccf97
 */
+body {
+  margin: 0;
+  padding: 0;
+}
 ::placeholder{ 
   font-family: Open Sans;
   font-style: normal;
@@ -16,6 +20,7 @@ h1 {
   margin: 0;
   margin-bottom: 20px;
   color: #1f2041;
+  user-select: none;
 }
 
 h2 {
@@ -24,14 +29,14 @@ h2 {
   font-weight: bold;
   font-size: 19px;
   line-height: 24px;
-
+  user-select: none;
   color: #1f2041;
 }
 
 h3 {
   margin: 0;
   margin-top: 20px;
-
+  user-select: none;
   font-family: Open Sans;
   font-style: normal;
   font-weight: bold;

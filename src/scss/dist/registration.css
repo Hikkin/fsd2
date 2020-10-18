@@ -1,0 +1,15 @@
+.registergcard {
+  display: block;
+  position: absolute;
+  margin-top: -50%;
+  margin-left: 40%;
+}
+
+.logincard {
+  display: none;
+  position: absolute;
+  margin-top: -42%;
+  margin-left: 40%;
+}
+
+/*# sourceMappingURL=registration.css.map */

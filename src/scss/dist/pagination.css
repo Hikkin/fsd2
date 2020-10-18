@@ -1,0 +1,98 @@
+.pagination {
+  width: fit-content;
+  margin-top: 5px;
+  font-family: Open Sans;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 12px;
+  align-items: center;
+  text-align: center;
+  color: rgba(31, 32, 65, 0.5);
+}
+
+.number-line {
+  display: flex;
+  line-height: 40px;
+  width: 240px;
+}
+
+.page1 {
+  cursor: pointer;
+  user-select: none;
+  width: 30px;
+  text-align: center;
+  margin: 0 5px;
+}
+
+.page2 {
+  cursor: pointer;
+  user-select: none;
+  width: 30px;
+  text-align: center;
+  margin: 0 5px;
+}
+
+.page3 {
+  user-select: none;
+  width: 30px;
+  text-align: center;
+  margin: 0 5px;
+}
+
+.page4 {
+  cursor: pointer;
+  user-select: none;
+  width: 30px;
+  text-align: center;
+  margin: 0 5px;
+}
+
+.currentpage {
+  user-select: none;
+  width: 40px;
+  height: 40px;
+  background: linear-gradient(180deg, #BC9CFF 0%, #8BA4F9 100%);
+  border-radius: 22px;
+  text-align: center;
+  font-weight: bold;
+  color: #fff;
+}
+
+.nextpage {
+  cursor: pointer;
+  user-select: none;
+  width: 40px;
+  height: 40px;
+  position: relative;
+  background: linear-gradient(180deg, #6FCF97 0%, #66D2EA 100%);
+  border-radius: 22px;
+  text-align: center;
+}
+
+.nextpage::after {
+  font-family: Material Icons;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 24px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  margin-left: 8px;
+  color: #FFFFFF;
+  position: absolute;
+  content: "arrow_forward";
+}
+
+.comment-line {
+  margin-top: 5px;
+  width: 240px;
+  font-family: Open Sans;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 24px;
+  color: rgba(31, 32, 65, 0.75);
+  text-align: center;
+}
+
+/*# sourceMappingURL=pagination.css.map */

@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="./images/ico.png">
+    <link rel="stylesheet" href="./fonts/fonts.css">
+    <link rel="stylesheet" href="./fonts/all.css">
+    <link rel="stylesheet" href="./style.css">
+    <title>Room details</title>
+  </head>
+  <body>
+        <div class="header">
+          <div class="headerlogo"><img src="images/logo.svg" alt="logo"></div>
+          <div class="headercontrol"><a><b>О нас</b></a><a>Услуги</a>
+            <div class="material-icons">expand_more</div><a>Вакансии</a><a>Новости</a><a>Соглашения</a>
+            <div class="material-icons">expand_more</div>
+                <div class="btn">
+                  <div class="btn__border--gradient">
+                    <button class="btn__border">click me</button>
+                  </div>
+                </div>
+                <div class="btn">
+                  <button class="btn__default">click me</button>
+                </div>
+          </div>
+        </div>
+    <div class="roomphotos">
+      <div class="photomainitem"><img src="images/fullrooms/888.svg" alt="888main" width="100%"></div>
+      <div class="photosecitem">
+        <div class="photoitem"><img src="images/fullrooms/888_1.svg" alt="888-1" width="100%"></div>
+        <div class="photoitem"><img src="images/fullrooms/888_2.svg" alt="888-2" width="100%" style="margin-top: -9px"></div>
+      </div>
+    </div>
+    <div class="roomabout">
+      <div class="roomdescription">
+        <div class="roomfeatures">
+          <h2>Сведения о номере</h2>
+              <div class="feature__item">
+                <div class="material-icons feature__icon">insert_emoticon</div>
+                <dl class="feature__text">
+                  <dt>Комфорт</dt>
+                  <dd>Шумопоглащающие стены</dd>
+                </dl>
+              </div>
+              <div class="feature__underline "></div>
+              <div class="feature__item">
+                <div class="material-icons feature__icon">location_city</div>
+                <dl class="feature__text">
+                  <dt>Удобство</dt>
+                  <dd>Окно в каждой из спален</dd>
+                </dl>
+              </div>
+              <div class="feature__underline "> </div>
+              <div class="feature__item">
+                <div class="material-icons feature__icon">whatshot</div>
+                <dl class="feature__text">
+                  <dt>Уют</dt>
+                  <dd>Номер оснащён камином</dd>
+                </dl>
+              </div>
+              <div class="feature__underline "></div>
+        </div>
+        <div class="roomrating">
+          <h2>Впечатления от номера</h2>
+        </div>
+        <div class="roomregister">
+              <div class="cardregister">
+                <h1>Регистрация аккаунта</h1>
+                <input class="textfield textfield__email" type="text" placeholder="Имя">
+                <input class="textfield textfield__email" type="text" placeholder="Фамилия">
+                    <div class="radio__block">
+                      <div class="radio-male">
+                        <input type="radio" name="sex" id="radio_male" value="sex_male">
+                        <label for="radio_male">
+                          <div class="custom-radio"></div>
+                          <div class="radio-text">Мужчина</div>
+                        </label>
+                      </div>
+                      <div class="radio-female">
+                        <input type="radio" name="sex" id="radio_female" value="sex_female">
+                        <label for="radio_female">
+                          <div class="custom-radio"></div>
+                          <div class="radio-text">Женщина</div>
+                        </label>
+                      </div>
+                    </div>
+                <h3>Дата рождения</h3>
+                    <input class="textfield textfield__mask" type="text" placeholder="ДД.ММ.ГГГГ">
+                <h3>Данные для входа в сервис</h3>
+                    <input class="textfield textfield__email" type="email" placeholder="Email">
+                <input class="textfield textfield__email" type="password" placeholder="Пароль">
+                    <div class="toggle-item">
+                      <input type="checkbox" name="toggle" id="toggle_spec" value="allow_spec-email">
+                      <label for="toggle_spec">
+                        <div class="custom-toggle"></div>
+                        <div class="toggle-text">Получать спецпредложения</div>
+                      </label>
+                    </div>
+                    <div class="btn">
+                      <button class="btn__wide">click me
+                        <div class="btn__wide__arrow">arrow_forward</div>
+                      </button>
+                    </div>
+                <div class="cardregistertologin">
+                  <p>Уже есть аккаунт на Toxin</p>
+                      <div class="btn">
+                        <div class="btn__border--gradient">
+                          <button class="btn__border">click me</button>
+                        </div>
+                      </div>
+                </div>
+              </div>
+        </div>
+      </div>
+      <div class="roomcomment">
+        <h2 style="margin-bottom: 20px">Отзывы посетителей номера</h2>
+            <div class="commentblock">
+              <div class="user">
+                <div class="user-avatar"></div>
+                <div class="user-stat">
+                  <div class="user-name">Имя Фамилия </div>
+                  <div class="user-date">5 дней назад</div>
+                </div>
+              </div>
+              <div class="comment">
+                <div class="like-item">
+                  <input type="checkbox" name="like" id="like_buttonc" value="like" checked>
+                  <label for="like_buttonc">
+                    <div class="custom-like">
+                      <div class="material-icons like-icon">favorite_border</div>
+                      <div class="material-icons like-icon--active">favorite</div>
+                      <div class="like-count">12</div>
+                    </div>
+                  </label>
+                </div>
+                <p>
+                   Великолепный матрас на кровати в основной спальне!
+                  А пуфик вообще потрясающий. <br>И стены, действительно, шумоподавляющие.
+                  Выкрикивал комплименты повару — никто не жаловался из соседей.
+                </p>
+              </div>
+            </div>
+            <div class="commentblock">
+              <div class="user">
+                <div class="user-avatar"></div>
+                <div class="user-stat">
+                  <div class="user-name">Имя Фамилия </div>
+                  <div class="user-date">5 дней назад</div>
+                </div>
+              </div>
+              <div class="comment">
+                <div class="like-item">
+                  <input type="checkbox" name="like" id="like_buttonc" value="like" checked>
+                  <label for="like_buttonc">
+                    <div class="custom-like">
+                      <div class="material-icons like-icon">favorite_border</div>
+                      <div class="material-icons like-icon--active">favorite</div>
+                      <div class="like-count">12</div>
+                    </div>
+                  </label>
+                </div>
+                <p>
+                   Великолепный матрас на кровати в основной спальне!
+                  А пуфик вообще потрясающий. <br>И стены, действительно, шумоподавляющие.
+                  Выкрикивал комплименты повару — никто не жаловался из соседей.
+                </p>
+              </div>
+            </div>
+      </div>
+      <div class="roomother">
+        <div class="roomrules">
+          <h2>Правила</h2>
+              <div class="bullet-block">
+                <div class="bullet-item"> 
+                  <div class="bullet-mark"></div>
+                  <div class="bullet-text">Нельзя с питомцами</div>
+                </div>
+                <div class="bullet-item"> 
+                  <div class="bullet-mark"></div>
+                  <div class="bullet-text">Без вечеринок и мероприятий</div>
+                </div>
+                <div class="bullet-item">
+                  <div class="bullet-mark"></div>
+                  <div class="bullet-text">Время прибытия — после 13:00, а выезд до 12:00</div>
+                </div>
+              </div>
+        </div>
+        <div class="roomcancel">
+          <h2>Отмена</h2>
+          <p style="width:340px">
+            Бесплатная отмена в течение 48 ч. 
+            После этого при отмене не позднее чем за 5 дн. 
+            до прибытия вы получите полный возврат за вычетом сбора за услуги.
+          </p>
+        </div>
+      </div>
+    </div>
+    <div class="footerline"></div>
+        <div class="footer">
+          <div class="footertop">
+            <div class="footblock"><img src="images/logo.svg" alt="logo">
+              <p style="max-width: 260px">Бронирование номеров в лучшем отеле 2019 года по версии ассоциации «Отельные взгляды»</p>
+            </div>
+            <div class="footblock">
+              <p class="title">Навигация</p>
+              <p>О нас</p>
+              <p>Новости</p>
+              <p>Служба поддержки</p>
+              <p>Услуги</p>
+            </div>
+            <div class="footblock">
+              <p class="title">О нас</p>
+              <p>О сервисе</p>
+              <p>Наша команда</p>
+              <p>Вакансии</p>
+              <p>Инвесторы</p>
+            </div>
+            <div class="footblock">
+              <p class="title">Служба поддержки</p>
+              <p>Соглашения</p>
+              <p>Сообщества</p>
+              <p>Связь с нами</p>
+            </div>
+            <div class="footblock">
+              <P class="title">Подписка</P>
+              <P style="max-width: 260px">Получайте специальные предложения и новости сервиса</P>
+                  <div class="textfield__subscription">
+                    <input class="textfield textfield--subscription" type="email" placeholder="Email">
+                    <div class="textfield__icon"><i class="material-icons">arrow_forward</i></div>
+                  </div>
+            </div>
+          </div>
+          <div class="footerbot">
+            <p>Copyright © 2018 Toxin отель. Все права зачищены.</p>
+            <div class="footericons"><i class="fab fa-twitter"></i>
+<i class="fab fa-facebook-square" aria-hidden="true"></i>
+<i class="fab fa-instagram"></i>
+            </div>
+          </div>
+        </div>
+  </body>
+</html>

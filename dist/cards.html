@@ -8,8 +8,6 @@
     <link rel="stylesheet" href="./fonts/all.css">
     <link rel="stylesheet" href="./style.css">
     <title>Kit | Cards</title>
-    <!--mixin cardbuy-->
-    <!--mixin cardroompreview -->
   </head>
   <body style="background-color: pink">
     <div class="cardcontent">
@@ -135,7 +133,86 @@
               </div>
             </div>
       </div>
-      <div class="cardcontent2">
+      <div class="cardcontent2"> 
+            <div class="cardbuy">
+              <div class="cardbuytop"></div>
+              <p>№ 888 люкс 9 990 Р в сутки</p>
+              <div class="cardsearch-date">
+                <div class="cardsearch-date-in">
+                  <h3>прибытие</h3>
+                      <div class="dropdown">
+                        <input type="checkbox" name="dropdown-d" id="dropdown-d">
+                        <label for="dropdown-d">
+                          <div class="dropdown__btn dropdown__date"><span class="dropdown__text">ДД.ММ.ГГГГ</span>
+                            <div class="dropdown__icon"><i class="material-icons">expand_more</i></div>
+                          </div>
+                        </label>
+                      </div>
+                </div>
+                <div class="cardsearch-date-out">
+                  <h3>выезд</h3>
+                      <div class="dropdown">
+                        <input type="checkbox" name="dropdown-d" id="dropdown-d">
+                        <label for="dropdown-d">
+                          <div class="dropdown__btn dropdown__date"><span class="dropdown__text">ДД.ММ.ГГГГ</span>
+                            <div class="dropdown__icon"><i class="material-icons">expand_more</i></div>
+                          </div>
+                        </label>
+                      </div>
+                </div>
+              </div>
+              <div class="cardsearch-guest">
+                <h3>гости</h3>
+                    <div class="dropdown">
+                      <input type="checkbox" name="dropdown-g" id="dropdown-g">
+                      <label for="dropdown-g">
+                        <div class="dropdown__btn dropdown__guest"><span class="dropdown__text">Сколько гостей</span>
+                          <div class="dropdown__icon"><i class="material-icons">expand_more</i></div>
+                        </div>
+                      </label>
+                      <div class="dropdown__guest-open">
+                        <div class="dropdown-item"><span>взрослые</span>
+                          <div class="countbuttons">
+                            <div class="minus-circle">-</div>
+                            <div class="count">0</div>
+                            <div class="plus-circle">+</div>
+                          </div>
+                        </div>
+                        <div class="dropdown-item"><span>дети</span>
+                          <div class="countbuttons">
+                            <div class="minus-circle">-</div>
+                            <div class="count">0</div>
+                            <div class="plus-circle">+</div>
+                          </div>
+                        </div>
+                        <div class="dropdown-item"><span>младенцы</span>
+                          <div class="countbuttons">
+                            <div class="minus-circle">-</div>
+                            <div class="count">0</div>
+                            <div class="plus-circle">+</div>
+                          </div>
+                        </div>
+                        <div class="dropdown-item">
+                          <div class="btn">
+                            <button class="btn__onlytext">очистить</button>
+                          </div>
+                          <div class="btn">
+                            <button class="btn__onlytext">применить</button>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+              </div>
+              <p>9 990P x 4 суток</p>
+              <p>Сбор за услуги: скидка 2 179Р</p>
+              <p>Сбор за дополнительные услуги</p>
+              <h1>Итого 38 081Р</h1>
+                  <div class="btn">
+                    <button class="btn__wide">click me
+                      <div class="btn__wide__arrow">arrow_forward</div>
+                    </button>
+                  </div>
+            </div>
             <div class="cardlogin">
               <h1>Войти</h1>
               <input class="textfield textfield__email" type="email" placeholder="Email">
@@ -155,7 +232,18 @@
               </div>
             </div>
       </div>
-      <div class="cardcontent3"></div>
+      <div class="cardcontent3">
+            <div class="cardroompreview">
+              <div class="roompreviewtop"><img src="images/rooms/888_1.png" alt="room888_1"></div>
+              <div class="roompreviewbot">
+                <p>№ 888 люкс 9 990 Р в сутки</p>
+                <div class="roomrating">
+                      <div class="rate-box"><span class="material-icons star" id="star0"></span><span class="material-icons star" id="star1"></span><span class="material-icons star" id="star2"></span><span class="material-icons star" id="star3"></span><span class="material-icons star_border" id="star4"></span></div>
+                  <p>65 отзывов</p>
+                </div>
+              </div>
+            </div>
+      </div>
     </div>
   </body>
 </html>

@@ -440,5 +440,44 @@ mixin cardlogin
     .cardregistertologin
       p Нет аккаунта на Toxin?
       +button-border
-//mixin cardbuy
-//mixin cardroompreview 
+
+
+mixin cardbuy
+  .cardbuy
+    .cardbuytop
+    p № 888 люкс 9 990 ₽ в сутки
+    .cardsearch-date
+      .cardsearch-date-in
+        h3 прибытие
+        +dropdown-date
+      .cardsearch-date-out
+        h3 выезд
+        +dropdown-date    
+    .cardsearch-guest
+      h3 гости
+      +dropdown-guest
+    p 9 990₽ x 4 суток
+    p Сбор за услуги: скидка 2 179₽
+    p Сбор за дополнительные услуги
+    h1 Итого 38 081₽
+    +button-wide
+
+
+mixin cardroompreview
+  .cardroompreview
+    .roompreviewtop
+      img(src="images/rooms/888_1.png", alt="room888_1")
+
+    .roompreviewprice
+      .roomnumber 
+        p № 888 
+      .roomprice
+        p <b>9 990 ₽</b> в сутки
+
+    .roomprevline
+
+    .roompreviewrating
+      .roomrating
+        +ratebutton
+      .roomfeedback
+        p <b>65</b> отзывов
